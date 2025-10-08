@@ -57,7 +57,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <img src="{{ asset('assets/images/logo.png') }}" alt="logo.png" width="40" height="40" class="d-inline-block align-text-top me-2">
+            <img src="{{ asset('assets/images/logo.png') }}" alt="logo">
             <a class="navbar-brand" href="#">My Laravel App</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,7 +84,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-            <h1 class="display-6 mb-2 font-custom" ><h1> {{ $username }} </h1>
+            <h1 class="display-6 mb-2 fonts-custom" ><h1> {{ $username }} </h1>
                                     <p> {{ $last_login }} </p>
             <p class="lead mb-0">A simple and elegant app using Bootstrap 5 and Laravel Blade.</p>
         </div>
