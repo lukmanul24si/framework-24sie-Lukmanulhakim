@@ -20,7 +20,7 @@
                     <p class="mb-0">Form untuk menambahkan data pelanggan baru.</p>
                 </div>
                 <div>
-                    <a href="{{route('pelanggan.index')}}" class="btn btn-primary"><i class="far fa-question-circle me-1"></i> Kembali</a>
+                    <a href="{{route('user.index')}}" class="btn btn-primary"><i class="far fa-question-circle me-1"></i> Kembali</a>
                 </div>
             </div>
         </div>
@@ -29,59 +29,36 @@
             <div class="col-12 mb-4">
                 <div class="card border-0 shadow components-section">
                     <div class="card-body">
-                        <form action="{{route('pelanggan.store')}}" method="POST">
+                        <form action="{{route('user.store')}}" method="POST">
                             @csrf
                             <div class="row mb-4">
                                 <div class="col-lg-4 col-sm-6">
-                                    <!-- First Name -->
+                                    <!-- name -->
                                     <div class="mb-3">
-                                        <label for="first_name" class="form-label">First name</label>
-                                        <input name="first_name" type="text" id="first_name" class="form-control" required>
+                                        <label for="NamaLengkap" class="form-label">NamaLengkap</label>
+                                        <!-- Ubah name="NamaLengkap" menjadi name="name" -->
+                                        <input name="name" type="text" id="NamaLengkap" class="form-control" required>
                                     </div>
-
-                                    <!-- Last Name -->
+                                    <!-- password -->
                                     <div class="mb-3">
-                                        <label for="last_name" class="form-label">Last name</label>
-                                        <input name="last_name" type="text" id="last_name" class="form-control" required>
+                                        <label for="Password" class="form-label">Password</label>
+                                        <!-- Ubah name="Password" menjadi name="password" -->
+                                        <input name="password" type="password" id="Password" class="form-control" required> 
+                                        <!-- Saya juga mengubah type="text" menjadi type="password" agar disembunyikan -->
                                     </div>
-                                </div>
 
                                 <div class="col-lg-4 col-sm-6">
-                                    <!-- Birthday -->
-                                    <div class="mb-3">
-                                        <label for="birthday" class="form-label">Birthday</label>
-                                        <input name="birthday" type="date" id="birthday" class="form-control">
-                                    </div>
 
-                                    <!-- Gender -->
-                                    <div class="mb-3">
-                                        <label for="gender" class="form-label">Gender</label>
-                                        <select name="gender"id="gender" name="gender" class="form-select">
-                                            <option value="">-- Pilih --</option>
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
-
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-sm-12">
                                     <!-- Email -->
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
                                         <input name="email"type="text" id="email" class="form-control" required>
                                     </div>
 
-                                    <!-- Phone -->
-                                    <div class="mb-3">
-                                        <label for="phone" class="form-label">Phone</label>
-                                        <input name="phone" type="text" id="phone" class="form-control">
-                                    </div>
-
                                     <!-- Buttons -->
                                     <div class="">
                                         <button type="submit" class="btn btn-primary">Simpan</button>
-                                        <a href="{{ route('pelanggan.index') }}" class="btn btn-outline-secondary ms-2">Batal</a>
+                                        <a href="{{ route('user.index') }}" class="btn btn-outline-secondary ms-2">Batal</a>
                                     </div>
                                 </div>
                             </div>

@@ -53,7 +53,7 @@ edit pelanggan
 
                                 <div class="col-lg-4 col-sm-6">
 
-                                    <!-- Email -->
+                                    <!-- password -->
                                     <div class="mb-3">
                                         <label for="password" class="form-label">password</label>
                                         <input name="password"type="text" id="password" class="form-control" value="{{ $dataUser->password }}" required>
@@ -62,7 +62,7 @@ edit pelanggan
                                     <!-- Buttons -->
                                     <div class="">
                                         <button type="submit" class="btn btn-primary">Simpan</button>
-                                        <a href="{{ route('pelanggan.index') }}" class="btn btn-outline-secondary ms-2">Batal</a>
+                                        <a href="{{ route('user.index') }}" class="btn btn-outline-secondary ms-2">Batal</a>
                                     </div>
                                 </div>
                             </div>
