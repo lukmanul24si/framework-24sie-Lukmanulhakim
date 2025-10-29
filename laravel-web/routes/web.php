@@ -6,7 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\PelangganController;
-
+use App\Http\Controllers\ProductController;
 
 
 Route::get('/', function () {
@@ -38,3 +38,7 @@ Route::post('question/store', [QuestionController::class, 'store'])
  Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
  route::resource('user',UserController::class);
+
+ Route::resource('products', ProductController::class);
+ Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+
